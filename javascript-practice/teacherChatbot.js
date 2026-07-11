@@ -19,3 +19,24 @@ console.log(topic.length);
 
 console.log(`Here is an example of accessing the first letter in the word ${subject}.`);
 console.log(subject[0]);
+
+console.log(`Here is an example of accessing the second letter in the word ${subject}.`);
+console.log(subject[1]);
+
+console.log(`Here is an example of accessing the last letter in the word ${subject}.`);
+console.log(subject[subject.length - 1]);
+
+const lastCharacter = subject[subject.length-1];
+console.log(lastCharacter);
+
+const learningIsFunSentence = "Learning is fun.";
+console.log("Here are examples of finding the positions of substrings in the sentence.");
+// we are going to use indexof method (Which is case sensitive)
+
+console.log(learningIsFunSentence.indexOf("Learning"));
+console.log(learningIsFunSentence.indexOf("fun"));
+
+console.log(learningIsFunSentence.indexOf("learning")); // This will show -1 because indexof method is case sensitivie.
+
+console.log("The end of this workshop.");
+
