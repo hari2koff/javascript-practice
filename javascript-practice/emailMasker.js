@@ -4,9 +4,6 @@ function emailMasker (email) {
     let maskString = email.slice(1,maskIndex);
     let maskLength = maskString.length;
     
-    
-
-
     return email.replace(maskString,"*".repeat(maskLength));
 
 }
