@@ -2,11 +2,21 @@
 
 
 function confirmEnding (stringToCheck,StringToCheckAganist) {
-    return stringToCheck.includes(StringToCheckAganist);
-    // still in progress
+    
+    
+    if (  ){
+        
+        
+       
+    }else {
+        return false;
+    }
+
+    
+    
 
 }
 
 
 
-console.log(confirmEnding("Abstraction", "action"));
+console.log(confirmEnding(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification")));
