@@ -4,13 +4,7 @@
 function confirmEnding (stringToCheck,StringToCheckAganist) {
     
     
-    if (  ){
-        
-        
-       
-    }else {
-        return false;
-    }
+    
 
     
     
