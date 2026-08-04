@@ -1,10 +1,18 @@
 // Confirm Ending 
 
 
-function confirmEnding (stringToCheck,StringToCheckAganist) {
+function confirmEnding (stringToCheck,stringToCheckAgainst) {
+    const len1 = stringToCheck.length ;
+    const len2 = stringToCheckAgainst.length ;
+    const indexOfTarget = len1 - len2 ;
+    if (stringToCheck.substring(indexOfTarget) == StringToCheckAgainst) {
+        return true ;
+    }else {
+        return false ;
+    }
     
     
-    
+    // used the substring method which exctract the substring from the certain index 
 
     
     
@@ -13,4 +21,4 @@ function confirmEnding (stringToCheck,StringToCheckAganist) {
 
 
 
-console.log(confirmEnding(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification")));
+console.log(confirmEnding("Bastian","ian"));
