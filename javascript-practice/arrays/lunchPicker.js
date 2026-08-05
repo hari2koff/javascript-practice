@@ -12,7 +12,7 @@ function addLunchToStart (lunchArray,itemToAdd) {
     console.log(`${itemToAdd} added to the start of the lunch menu.`);
     return lunchArray;
 }
-
+// issueToFix - add a logic if no luches are in the array.
 function removeLastLunch (lunchArray) {
     let itemRemoved = lunchArray[-1];
     lunchArray.pop();
@@ -27,3 +27,19 @@ function removeFirstLunch (lunchArray) {
     return lunchArray;
 }
 
+function getRandomLunch (lunchArray) {
+    if (lunchArray.length == 0){
+        return "No lunches available.";
+    }
+    let randomNum =  Math.floor(Math.random()*lunchArray.length );
+    let randomLunch = lunchArray[randomNum];
+    console.log(`Randomly selected lunch: ${randomLunch}`);
+}
+
+function showLunchMenu (lunchArray) {
+    if (lunchArray.length == 0) {
+        console.log("The menu is empty.");
+    }else {
+        console.log(`Menu items: ${lunchArray}`);
+    }
+}
